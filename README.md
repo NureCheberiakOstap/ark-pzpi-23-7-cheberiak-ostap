@@ -1,1 +1,7 @@
-# ark-pzpi-23-7-cheberiak-ostap
+ПЗПІ-23-7
+
+Чеберяк Остап
+
+Правила оформлення програмного коду на мові Java
+
+Методи рефакторингу коду: Extract Method, Extract Class, Remove Dead Code на мові Java
