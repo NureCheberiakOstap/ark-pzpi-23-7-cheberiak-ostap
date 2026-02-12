@@ -1,0 +1,445 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\sporttournaments.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\sporttournaments.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\controllers\\tournamentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\controllers\\tournamentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\dtos\\createtournamentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\dtos\\createtournamentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\controllers\\baseauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\controllers\\baseauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\dtos\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\dtos\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\dtos\\createteamrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\dtos\\createteamrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\dtos\\createregistrationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\dtos\\createregistrationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\dtos\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\dtos\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\services\\authtokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\services\\authtokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\helpers\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\helpers\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\entities\\matchresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\entities\\matchresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\entities\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\entities\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\entities\\tournamentregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\entities\\tournamentregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\entities\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\entities\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\entities\\tournament.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\entities\\tournament.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.api\\sporttournaments.api\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFECADE8-FDF5-4134-8CED-2111F7799D30}|SportTournaments.Api\\SportTournaments.Api.csproj|solutionrelative:sporttournaments.api\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TeamsController.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Controllers\\TeamsController.cs",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\Controllers\\TeamsController.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Controllers\\TeamsController.cs",
+              "RelativeToolTip": "SportTournaments.Api\\Controllers\\TeamsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T17:48:48.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "SportTournaments.Api\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T22:36:54.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Program.cs",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\Program.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Program.cs",
+              "RelativeToolTip": "SportTournaments.Api\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T17:30:12.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DbSeeder.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Data\\DbSeeder.cs",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\Data\\DbSeeder.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Data\\DbSeeder.cs",
+              "RelativeToolTip": "SportTournaments.Api\\Data\\DbSeeder.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T22:35:13.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Dtos\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\Dtos\\LoginRequest.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Dtos\\LoginRequest.cs",
+              "RelativeToolTip": "SportTournaments.Api\\Dtos\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T22:33:29.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\appsettings.json",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\appsettings.json",
+              "RelativeToolTip": "SportTournaments.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-11T17:42:34.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "SportTournaments.Api\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T17:42:19.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SportTournaments.Api",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\SportTournaments.Api.csproj",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\SportTournaments.Api.csproj",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\SportTournaments.Api.csproj",
+              "RelativeToolTip": "SportTournaments.Api\\SportTournaments.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-11T17:32:38.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RegistrationController.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Controllers\\RegistrationController.cs",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\Controllers\\RegistrationController.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Controllers\\RegistrationController.cs",
+              "RelativeToolTip": "SportTournaments.Api\\Controllers\\RegistrationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T17:49:28.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TournamentsController.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Controllers\\TournamentsController.cs",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\Controllers\\TournamentsController.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Controllers\\TournamentsController.cs",
+              "RelativeToolTip": "SportTournaments.Api\\Controllers\\TournamentsController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAqwFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T17:45:03.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BaseAuthController.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Controllers\\BaseAuthController.cs",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\Controllers\\BaseAuthController.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Controllers\\BaseAuthController.cs",
+              "RelativeToolTip": "SportTournaments.Api\\Controllers\\BaseAuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T22:54:59.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateTournamentRequest.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Dtos\\CreateTournamentRequest.cs",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\Dtos\\CreateTournamentRequest.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Dtos\\CreateTournamentRequest.cs",
+              "RelativeToolTip": "SportTournaments.Api\\Dtos\\CreateTournamentRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T17:44:38.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RegisterRequest.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Dtos\\RegisterRequest.cs",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\Dtos\\RegisterRequest.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Dtos\\RegisterRequest.cs",
+              "RelativeToolTip": "SportTournaments.Api\\Dtos\\RegisterRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T22:33:12.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CreateTeamRequest.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Dtos\\CreateTeamRequest.cs",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\Dtos\\CreateTeamRequest.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Dtos\\CreateTeamRequest.cs",
+              "RelativeToolTip": "SportTournaments.Api\\Dtos\\CreateTeamRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T17:47:34.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CreateRegistrationRequest.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Dtos\\CreateRegistrationRequest.cs",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\Dtos\\CreateRegistrationRequest.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Dtos\\CreateRegistrationRequest.cs",
+              "RelativeToolTip": "SportTournaments.Api\\Dtos\\CreateRegistrationRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T17:48:01.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AuthResponse.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Dtos\\AuthResponse.cs",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\Dtos\\AuthResponse.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Dtos\\AuthResponse.cs",
+              "RelativeToolTip": "SportTournaments.Api\\Dtos\\AuthResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T22:33:56.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AuthTokenService.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Services\\AuthTokenService.cs",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\Services\\AuthTokenService.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Services\\AuthTokenService.cs",
+              "RelativeToolTip": "SportTournaments.Api\\Services\\AuthTokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T22:45:33.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Helpers\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\Helpers\\PasswordHasher.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Helpers\\PasswordHasher.cs",
+              "RelativeToolTip": "SportTournaments.Api\\Helpers\\PasswordHasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T22:34:49.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MatchResult.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Entities\\MatchResult.cs",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\Entities\\MatchResult.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Entities\\MatchResult.cs",
+              "RelativeToolTip": "SportTournaments.Api\\Entities\\MatchResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T17:41:51.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Match.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Entities\\Match.cs",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\Entities\\Match.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Entities\\Match.cs",
+              "RelativeToolTip": "SportTournaments.Api\\Entities\\Match.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA+wBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T17:41:23.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TournamentRegistration.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Entities\\TournamentRegistration.cs",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\Entities\\TournamentRegistration.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Entities\\TournamentRegistration.cs",
+              "RelativeToolTip": "SportTournaments.Api\\Entities\\TournamentRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T17:40:25.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Team.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Entities\\Team.cs",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\Entities\\Team.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Entities\\Team.cs",
+              "RelativeToolTip": "SportTournaments.Api\\Entities\\Team.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T17:39:57.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Tournament.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Entities\\Tournament.cs",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\Entities\\Tournament.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Entities\\Tournament.cs",
+              "RelativeToolTip": "SportTournaments.Api\\Entities\\Tournament.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T17:39:02.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\Entities\\User.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Entities\\User.cs",
+              "RelativeToolTip": "SportTournaments.Api\\Entities\\User.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T17:38:32.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Entities\\Role.cs",
+              "RelativeDocumentMoniker": "SportTournaments.Api\\Entities\\Role.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.Api\\SportTournaments.Api\\Entities\\Role.cs",
+              "RelativeToolTip": "SportTournaments.Api\\Entities\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T17:38:02.171Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
