@@ -1,0 +1,15 @@
+﻿{
+  "ApiBaseUrl": "https://localhost:7050",
+  "Email": "organizer2@test.com",
+  "Password": "123456",
+  "TournamentId": "",
+  "WinPoints": 3,
+  "DrawPoints": 1,
+  "LosePoints": 0,
+  "MaxScore": 99,
+  "MaxGoalDiff": 20,
+  "TimeoutSec": 10,
+  "MaxRetries": 2,
+  "OfflineQueueEnabled": true,
+  "QueueFilePath": "queue.json"
+}

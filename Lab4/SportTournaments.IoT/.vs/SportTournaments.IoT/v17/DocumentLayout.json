@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Work\\VisualStudio\\2025\\SportTournaments.IoT\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FE6959DD-E481-46FD-AE25-94F05EBB422F}|SportTournaments.IoT\\SportTournaments.IoT.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.iot\\sporttournaments.iot\\offlinequeue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE6959DD-E481-46FD-AE25-94F05EBB422F}|SportTournaments.IoT\\SportTournaments.IoT.csproj|solutionrelative:sporttournaments.iot\\offlinequeue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE6959DD-E481-46FD-AE25-94F05EBB422F}|SportTournaments.IoT\\SportTournaments.IoT.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.iot\\sporttournaments.iot\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE6959DD-E481-46FD-AE25-94F05EBB422F}|SportTournaments.IoT\\SportTournaments.IoT.csproj|solutionrelative:sporttournaments.iot\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE6959DD-E481-46FD-AE25-94F05EBB422F}|SportTournaments.IoT\\SportTournaments.IoT.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.iot\\sporttournaments.iot\\iotsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE6959DD-E481-46FD-AE25-94F05EBB422F}|SportTournaments.IoT\\SportTournaments.IoT.csproj|solutionrelative:sporttournaments.iot\\iotsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE6959DD-E481-46FD-AE25-94F05EBB422F}|SportTournaments.IoT\\SportTournaments.IoT.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.iot\\sporttournaments.iot\\businessrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE6959DD-E481-46FD-AE25-94F05EBB422F}|SportTournaments.IoT\\SportTournaments.IoT.csproj|solutionrelative:sporttournaments.iot\\businessrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE6959DD-E481-46FD-AE25-94F05EBB422F}|SportTournaments.IoT\\SportTournaments.IoT.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.iot\\sporttournaments.iot\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE6959DD-E481-46FD-AE25-94F05EBB422F}|SportTournaments.IoT\\SportTournaments.IoT.csproj|solutionrelative:sporttournaments.iot\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE6959DD-E481-46FD-AE25-94F05EBB422F}|SportTournaments.IoT\\SportTournaments.IoT.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.iot\\sporttournaments.iot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE6959DD-E481-46FD-AE25-94F05EBB422F}|SportTournaments.IoT\\SportTournaments.IoT.csproj|solutionrelative:sporttournaments.iot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE6959DD-E481-46FD-AE25-94F05EBB422F}|SportTournaments.IoT\\SportTournaments.IoT.csproj|c:\\work\\visualstudio\\2025\\sporttournaments.iot\\sporttournaments.iot\\iotsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FE6959DD-E481-46FD-AE25-94F05EBB422F}|SportTournaments.IoT\\SportTournaments.IoT.csproj|solutionrelative:sporttournaments.iot\\iotsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.IoT\\SportTournaments.IoT\\Program.cs",
+              "RelativeDocumentMoniker": "SportTournaments.IoT\\Program.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.IoT\\SportTournaments.IoT\\Program.cs",
+              "RelativeToolTip": "SportTournaments.IoT\\Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwK0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T15:51:41.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BusinessRules.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.IoT\\SportTournaments.IoT\\BusinessRules.cs",
+              "RelativeDocumentMoniker": "SportTournaments.IoT\\BusinessRules.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.IoT\\SportTournaments.IoT\\BusinessRules.cs",
+              "RelativeToolTip": "SportTournaments.IoT\\BusinessRules.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA+wA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T15:54:11.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OfflineQueue.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.IoT\\SportTournaments.IoT\\OfflineQueue.cs",
+              "RelativeDocumentMoniker": "SportTournaments.IoT\\OfflineQueue.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.IoT\\SportTournaments.IoT\\OfflineQueue.cs",
+              "RelativeToolTip": "SportTournaments.IoT\\OfflineQueue.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAADwvzAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T15:54:00.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApiClient.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.IoT\\SportTournaments.IoT\\ApiClient.cs",
+              "RelativeDocumentMoniker": "SportTournaments.IoT\\ApiClient.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.IoT\\SportTournaments.IoT\\ApiClient.cs",
+              "RelativeToolTip": "SportTournaments.IoT\\ApiClient.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T15:53:50.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IoTSettings.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.IoT\\SportTournaments.IoT\\IoTSettings.cs",
+              "RelativeDocumentMoniker": "SportTournaments.IoT\\IoTSettings.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.IoT\\SportTournaments.IoT\\IoTSettings.cs",
+              "RelativeToolTip": "SportTournaments.IoT\\IoTSettings.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAUwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T15:53:30.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Models.cs",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.IoT\\SportTournaments.IoT\\Models.cs",
+              "RelativeDocumentMoniker": "SportTournaments.IoT\\Models.cs",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.IoT\\SportTournaments.IoT\\Models.cs",
+              "RelativeToolTip": "SportTournaments.IoT\\Models.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAACkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T15:53:07.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "iotsettings.json",
+              "DocumentMoniker": "C:\\Work\\VisualStudio\\2025\\SportTournaments.IoT\\SportTournaments.IoT\\iotsettings.json",
+              "RelativeDocumentMoniker": "SportTournaments.IoT\\iotsettings.json",
+              "ToolTip": "C:\\Work\\VisualStudio\\2025\\SportTournaments.IoT\\SportTournaments.IoT\\iotsettings.json",
+              "RelativeToolTip": "SportTournaments.IoT\\iotsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-13T15:52:39.571Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

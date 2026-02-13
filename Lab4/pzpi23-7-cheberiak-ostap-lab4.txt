@@ -1,0 +1,626 @@
+Міністерство освіти і науки України
+Харківський національний університет радіоелектроніки
+Кафедра програмної інженерії
+
+
+
+Звіт
+з лабораторної роботи №4
+з дисципліни «Аналіз та рефакторінг коду»
+
+
+
+
+
+ 
+Виконав:
+ст. гр. ПЗПІ 23-7
+Чеберяк Остап Ігорович
+                   
+                                                                       
+
+
+
+
+
+
+
+
+
+
+Харків 2026
+1.	Архітектура та загальна структура IoT клієнта
+1.1	Загальний опис IoT клієнта Smart Scoreboard
+У межах лабораторної роботи було розроблено IoT-клієнт Smart Scoreboard, призначений для використання у складі програмної системи організації спортивних змагань. IoT-клієнт виконує функції суддівського термінала та забезпечує взаємодію між користувачем (суддею або організатором) і серверною частиною системи під час проведення матчів.
+Основним призначенням IoT-клієнта є оперативне внесення результатів матчів, локальна обробка даних предметної області та отримання агрегованої інформації про стан турніру. Клієнт реалізовано у вигляді консольного застосунку, що дозволяє використовувати його на різних типах пристроїв, зокрема на міні-ПК або вбудованих системах, характерних для IoT-середовища.
+
+1.2	Місце IoT клієнта в архітектурі програмної системи
+IoT-клієнт Smart Scoreboard є окремим компонентом загальної архітектури програмної системи та взаємодіє з серверною частиною через прикладний програмний інтерфейс (API). Клієнт не має прямого доступу до бази даних і здійснює обмін даними виключно за допомогою HTTP-запитів до серверних endpoint-ів.
+У загальній архітектурі системи IoT-клієнт виконує роль проміжного рівня між користувачем та сервером, забезпечуючи:
+•	введення та первинну обробку результатів матчів;
+•	локальну реалізацію частини бізнес-логіки;
+•	передачу валідованих даних до серверної частини;
+•	отримання та відображення агрегованої інформації про турнір.
+Такий підхід дозволяє зменшити навантаження на сервер та підвищити автономність IoT-пристрою.
+
+1.3	Платформа та середовище виконання IoT клієнта
+IoT-клієнт реалізовано у вигляді консольного застосунку на платформі .NET 8 з використанням мови програмування C#. Обрана платформа забезпечує кросплатформеність і дозволяє запускати клієнт на операційних системах Windows та Linux.
+Консольний формат застосунку відповідає концепції IoT або SmartDevice-рішень, оскільки подібні пристрої часто не мають графічного інтерфейсу та керуються через командний рядок або спеціалізовані термінали. Це дозволяє розглядати розроблений клієнт як програмне забезпечення, придатне для розгортання на вбудованих пристроях.
+
+1.4	Взаємодія IoT клієнта з серверною частиною системи
+Взаємодія IoT-клієнта з серверною частиною реалізується за допомогою REST-архітектури з використанням протоколу HTTPS. Для обміну даними застосовується формат JSON.
+Доступ до захищених ресурсів серверної частини здійснюється після проходження процедури автентифікації користувача. Після успішного входу клієнт отримує токен доступу, який передається у кожному наступному HTTP-запиті в заголовку X-Auth-Token.
+IoT-клієнт використовує серверні endpoint-и для:
+•	отримання списку турнірів;
+•	отримання списку матчів обраного турніру;
+•	внесення результатів матчів;
+•	отримання турнірної таблиці.
+
+1.5	Структура програмних компонентів IoT клієнта
+Архітектура IoT-клієнта побудована за модульним принципом і включає такі основні компоненти:
+•	модуль конфігурації, що відповідає за зчитування та зберігання параметрів налаштування клієнта;
+•	модуль взаємодії з API, який реалізує HTTP-запити до серверної частини;
+•	модуль бізнес-логіки, що виконує локальну валідацію та обробку результатів матчів;
+•	модуль офлайн-черги, призначений для збереження даних у разі тимчасової недоступності сервера;
+•	керуючий модуль, який забезпечує взаємодію з користувачем через консольний інтерфейс.
+Така структура дозволяє розділити відповідальність між компонентами, спростити супровід коду та забезпечити можливість подальшого розширення функціональності IoT-клієнта.
+ 
+
+2.	Функціональні можливості IoT клієнта
+2.1	Авторизація користувача IoT клієнта
+IoT-клієнт Smart Scoreboard підтримує механізм авторизації користувача з використанням серверної частини програмної системи. Для доступу до функціональних можливостей клієнта користувач повинен пройти процедуру автентифікації шляхом введення облікових даних.
+Після успішної авторизації сервер повертає токен доступу, який використовується IoT-клієнтом для виконання захищених запитів до API. Отриманий токен зберігається в оперативній пам’яті клієнта та передається у кожному наступному HTTP-запиті в заголовку X-Auth-Token. Такий підхід забезпечує контроль доступу до серверних ресурсів та запобігає несанкціонованому використанню функціональності системи.
+
+2.2	Отримання списку турнірів
+Після успішної авторизації IoT-клієнт забезпечує отримання списку доступних турнірів із серверної частини системи. Запит до відповідного API-endpoint-а дозволяє отримати основну інформацію про турніри, зокрема ідентифікатор, назву та поточний статус.
+Отриманий список турнірів використовується для подальшого вибору турніру, у межах якого буде здійснюватися робота IoT-клієнта. Турніри, що перебувають у підготовчому стані, не використовуються для внесення результатів, що відповідає бізнес-правилам програмної системи.
+
+2.3	Отримання списку матчів обраного турніру
+Після вибору турніру IoT-клієнт виконує запит до серверної частини для отримання списку матчів, що належать до обраного турніру. Для кожного матчу клієнт отримує ідентифікатор, номер раунду, інформацію про команди-учасники та поточний статус матчу.
+Отримана інформація використовується для відображення доступних матчів та подальшого вибору матчу для внесення результату. Матчі, для яких результат вже зафіксований, відображаються окремо та не використовуються для повторного введення даних, що дозволяє уникнути логічних помилок під час роботи користувача з IoT-клієнтом.
+
+2.4	Внесення результатів матчів
+Однією з основних функцій IoT-клієнта є внесення результатів матчів до серверної частини програмної системи. Користувач обирає матч та вводить значення рахунку для обох команд-учасників.
+Перед передачею результатів на сервер IoT-клієнт виконує локальну перевірку введених даних та обчислення похідних показників. Після успішної валідації дані передаються до серверної частини за допомогою відповідного API-запиту. У разі успішного виконання запиту статус матчу змінюється на завершений.
+Якщо сервер повертає помилку, пов’язану з порушенням бізнес-логіки (наприклад, спроба повторного внесення результату), IoT-клієнт коректно обробляє таку ситуацію та інформує користувача про причину відмови.
+
+2.5	Отримання та відображення турнірної таблиці
+IoT-клієнт підтримує отримання агрегованої інформації про стан турніру у вигляді турнірної таблиці. Турнірна таблиця формується серверною частиною системи на основі результатів зіграних матчів.
+Після отримання відповідних даних IoT-клієнт відображає інформацію про кількість зіграних матчів, перемог, нічиїх, поразок, різницю м’ячів та кількість набраних очок для кожної команди. Отримані дані дозволяють користувачу оперативно оцінити поточний стан турніру без необхідності звернення до інших компонентів системи.
+ 
+3.	Бізнес-логіка IoT клієнта
+3.1	Локальна валідація введених даних
+Перед передачею результатів матчів до серверної частини програмної системи IoT-клієнт виконує локальну валідацію введених користувачем даних. Така перевірка дозволяє запобігти передачі некоректних або логічно помилкових значень та зменшити кількість помилкових запитів до сервера.
+У процесі валідації перевіряється коректність числових значень рахунку, зокрема відсутність від’ємних значень, перевищення допустимого максимального значення та коректність різниці м’ячів. У разі виявлення помилки IoT-клієнт припиняє подальшу обробку та інформує користувача про причину відмови.
+
+3.2	Алгоритм обробки результатів матчу
+Після успішної валідації введених даних IoT-клієнт виконує локальну обробку результатів матчу. На цьому етапі обчислюються похідні показники, необхідні для подальшої бізнес-логіки, зокрема різниця м’ячів між командами.
+Локальна обробка результатів дозволяє клієнту попередньо визначити підсумок матчу та підготувати структуровані дані для передачі на сервер. Такий підхід забезпечує підвищення автономності IoT-пристрою та дозволяє виконувати частину логіки безпосередньо на стороні клієнта.
+
+3.3	Локальний розрахунок очок
+Однією з ключових функцій бізнес-логіки IoT-клієнта є локальний розрахунок турнірних очок для команд-учасників матчу. Розрахунок виконується відповідно до заданих правил, зокрема на основі результату перемоги, поразки або нічиєї.
+Залежно від співвідношення рахунку IoT-клієнт визначає кількість очок, що нараховуються кожній команді. Обчислені значення використовуються для інформування користувача про підсумок матчу ще до передачі результатів на сервер, а також для контролю коректності подальшої агрегації даних на серверній стороні.
+
+3.4	Обробка помилкових та виняткових ситуацій
+IoT-клієнт передбачає обробку помилкових та виняткових ситуацій, що можуть виникати під час взаємодії з серверною частиною системи. До таких ситуацій належать відмова у виконанні запиту через порушення бізнес-логіки або тимчасова недоступність сервера.
+У разі отримання відповіді сервера про неможливість повторного внесення результату матчу IoT-клієнт коректно інформує користувача про наявність вже збереженого результату та запобігає повторній передачі даних. У випадку мережевих помилок або відсутності з’єднання клієнт може зберігати результати локально для подальшої синхронізації.
+
+3.5	Розподіл бізнес-логіки між IoT клієнтом та сервером
+Бізнес-логіка програмної системи розподілена між IoT-клієнтом та серверною частиною. IoT-клієнт відповідає за первинну валідацію даних, локальну обробку результатів та підготовку інформації для передачі на сервер. Серверна частина, у свою чергу, виконує централізовану обробку даних, зберігання результатів та формування агрегованої турнірної таблиці.
+Такий розподіл обов’язків дозволяє зменшити навантаження на сервер, підвищити стійкість системи до помилок введення та забезпечити коректну синхронізацію даних між різними компонентами програмної системи.
+ 
+4.	UML-діаграми IoT клієнта
+4.1	UML діаграма прецедентів IoT клієнта
+UML діаграма прецедентів використовується для відображення основних функціональних можливостей IoT клієнта Smart Scoreboard та сценаріїв його взаємодії з користувачем і серверною частиною системи. Діаграма дозволяє наочно представити, які дії може виконувати користувач у межах клієнтського застосунку, а також які з цих дій потребують взаємодії з API сервером.
+Основним актором UML діаграми прецедентів є організатор або суддя, який використовує IoT клієнт для роботи з турнірами та матчами. Також на діаграмі представлено зовнішню систему API Server, яка забезпечує обробку запитів, збереження даних та формування агрегованої інформації.
+До основних прецедентів IoT клієнта належать:
+•	авторизація користувача;
+•	отримання списку турнірів;
+•	вибір турніру;
+•	отримання списку матчів обраного турніру;
+•	внесення результатів матчів;
+•	перегляд турнірної таблиці.
+ 
+Рисунок 4.1 – UML-діаграма прецедентів IoT клієнта Smart Scoreboard
+
+Для відображення внутрішньої бізнес-логіки клієнта використано відношення <<include>>, зокрема між прецедентом внесення результату матчу та локальною валідацією введених даних. Це підкреслює, що перевірка коректності введених значень є обов’язковою частиною процесу внесення результатів.
+Наявність залежностей між прецедентами дозволяє показати логічну послідовність виконання дій, наприклад необхідність вибору турніру перед отриманням списку матчів або переглядом турнірної таблиці.
+
+4.2	UML діаграма діяльності IoT клієнта
+UML діаграма діяльності призначена для опису послідовності виконання дій під час роботи IoT клієнта Smart Scoreboard та відображає алгоритм взаємодії користувача з клієнтським застосунком і серверною частиною системи.
+Процес роботи IoT клієнта починається із запуску застосунку та виконання процедури авторизації користувача. У разі успішної автентифікації клієнт отримує список доступних турнірів, після чого користувач обирає активний турнір для подальшої роботи. Далі IoT клієнт отримує список матчів обраного турніру та надає можливість вибору матчу для внесення результату.
+Після введення рахунку виконується локальна валідація введених даних і обчислення похідних показників, таких як різниця м’ячів та результат матчу. У разі успішної перевірки дані передаються до серверної частини системи. Якщо сервер приймає результат, користувач отримує оновлену турнірну таблицю. У випадку виникнення помилок або некоректних даних клієнт інформує користувача та повертає процес до відповідного етапу.
+
+ 
+Рисунок 4.2 – UML-діаграма діяльності IoT клієнта Smart Scoreboard
+Таким чином, UML діаграма діяльності демонструє повний цикл роботи IoT клієнта, включаючи обробку основних сценаріїв та можливих виняткових ситуацій.
+ 
+5.	Тестування IoT клієнта
+5.1	Демонстрація функціонального тестування
+Функціональне тестування виконувалося шляхом послідовного виконання команд консольного інтерфейсу IoT клієнта. Під час запуску застосунку було виконано авторизацію користувача в системі та отримано токен доступу. Після цього IoT клієнт сформував список доступних турнірів, з яких було обрано потрібний турнір для подальшої роботи.
+
+ 
+Рисунок 4.3 – Вигляд роботи програми IoT клієнта
+
+Далі було виконано отримання списку матчів обраного турніру та обрано матч зі статусом scheduled. Для обраного матчу було введено значення рахунку для обох команд, після чого клієнт виконав локальну обробку даних і розрахував похідні показники:
+Після підтвердження користувачем дані були передані на сервер. У разі успішної обробки запиту сервером IoT клієнт отримав повідомлення про успішне внесення результату та можливість перегляду оновленої турнірної таблиці. Оновлення турнірної таблиці підтверджує, що серверна частина врахувала внесений результат і коректно сформувала агреговані показники.
+
+5.2	Аналіз результатів тестування
+За результатами проведеного тестування встановлено, що IoT клієнт Smart Scoreboard коректно виконує основні функції, передбачені для роботи з турнірами та матчами. Процес авторизації проходить успішно, після чого клієнт має доступ до захищених endpoint-ів серверної частини системи.
+Отримання списку турнірів та матчів відбувається без помилок, а внесення результатів матчу супроводжується виконанням локальної бізнес-логіки: перевіркою коректності даних і розрахунком похідних показників. Після внесення результатів серверна частина оновлює стан матчу та коректно формує турнірну таблицю, що підтверджується відображенням оновлених показників у IoT клієнті.
+Таким чином, реалізований IoT клієнт забезпечує стабільну взаємодію з серверною частиною системи, підтримує локальну обробку даних і дозволяє користувачу оперативно вносити результати матчів та контролювати поточний стан турніру.
+ 
+ДОДАТОК А
+Код клієнта:
+ApiClient.cs
+using System.Net.Http.Headers;
+using System.Text;
+using System.Text.Json;
+
+public sealed class ApiClient
+{
+    private readonly HttpClient _http;
+    private string? _token;
+
+    public ApiClient(string baseUrl, int timeoutSec)
+    {
+        _http = new HttpClient
+        {
+            BaseAddress = new Uri(baseUrl.TrimEnd('/') + "/"),
+            Timeout = TimeSpan.FromSeconds(timeoutSec)
+        };
+    }
+
+    public void SetToken(string token)
+    {
+        _token = token;
+    }
+
+    private HttpRequestMessage NewRequest(HttpMethod method, string path, object? body = null)
+    {
+        var req = new HttpRequestMessage(method, path);
+
+        if (!string.IsNullOrWhiteSpace(_token))
+            req.Headers.Add("X-Auth-Token", _token);
+
+        if (body != null)
+        {
+            var json = JsonSerializer.Serialize(body);
+            req.Content = new StringContent(json, Encoding.UTF8, "application/json");
+        }
+
+        return req;
+    }
+
+    private static async Task<T> ReadJsonAsync<T>(HttpResponseMessage resp)
+    {
+        var text = await resp.Content.ReadAsStringAsync();
+        if (!resp.IsSuccessStatusCode)
+            throw new InvalidOperationException($"HTTP {(int)resp.StatusCode}: {text}");
+
+        var obj = JsonSerializer.Deserialize<T>(text, new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        });
+
+        if (obj == null) throw new InvalidOperationException("Failed to parse response.");
+        return obj;
+    }
+
+    public async Task<AuthResponse> LoginAsync(string email, string password)
+    {
+        var req = NewRequest(HttpMethod.Post, "api/auth/login", new LoginRequest { Email = email, Password = password });
+        var resp = await _http.SendAsync(req);
+        return await ReadJsonAsync<AuthResponse>(resp);
+    }
+
+    public async Task<List<TournamentListItem>> GetTournamentsAsync()
+    {
+        var req = NewRequest(HttpMethod.Get, "api/tournaments");
+        var resp = await _http.SendAsync(req);
+        return await ReadJsonAsync<List<TournamentListItem>>(resp);
+    }
+
+    public async Task<List<MatchListItem>> GetMatchesAsync(string tournamentId)
+    {
+        var req = NewRequest(HttpMethod.Get, $"api/tournaments/{tournamentId}/matches");
+        var resp = await _http.SendAsync(req);
+        return await ReadJsonAsync<List<MatchListItem>>(resp);
+    }
+
+    public async Task EnterResultAsync(string matchId, int home, int away)
+    {
+        var body = new CreateMatchResultRequest { HomeScore = home, AwayScore = away };
+        var req = NewRequest(HttpMethod.Post, $"api/matches/{matchId}/result", body);
+        var resp = await _http.SendAsync(req);
+
+        if (!resp.IsSuccessStatusCode)
+        {
+            var text = await resp.Content.ReadAsStringAsync();
+            throw new InvalidOperationException($"HTTP {(int)resp.StatusCode}: {text}");
+        }
+    }
+
+    public async Task<List<StandingsRow>> GetStandingsAsync(string tournamentId)
+    {
+        var req = NewRequest(HttpMethod.Get, $"api/tournaments/{tournamentId}/standings");
+        var resp = await _http.SendAsync(req);
+        return await ReadJsonAsync<List<StandingsRow>>(resp);
+    }
+}
+
+BusinessRules.cs
+public static class BusinessRules
+{
+    public static void ValidateScore(int home, int away, IoTSettings s)
+    {
+        if (home < 0 || away < 0)
+            throw new ArgumentException("Score cannot be negative.");
+
+        if (home > s.MaxScore || away > s.MaxScore)
+            throw new ArgumentException($"Score too large. MaxScore={s.MaxScore}");
+
+        var diff = Math.Abs(home - away);
+        if (diff > s.MaxGoalDiff)
+            Console.WriteLine($"[WARN] Big score difference ({diff}). MaxGoalDiff={s.MaxGoalDiff}. Continue carefully.");
+    }
+
+    public static (int homePoints, int awayPoints, int goalDiff) ComputePoints(int home, int away, IoTSettings s)
+    {
+        int homePoints, awayPoints;
+
+        if (home > away)
+        {
+            homePoints = s.WinPoints;
+            awayPoints = s.LosePoints;
+        }
+        else if (home < away)
+        {
+            homePoints = s.LosePoints;
+            awayPoints = s.WinPoints;
+        }
+        else
+        {
+            homePoints = s.DrawPoints;
+            awayPoints = s.DrawPoints;
+        }
+
+        return (homePoints, awayPoints, home - away);
+    }
+}
+
+IoTSettings.cs
+using System.Text.Json;
+
+public sealed class IoTSettings
+{
+    public string ApiBaseUrl { get; set; } = "http://localhost:7050";
+    public string Email { get; set; } = "";
+    public string Password { get; set; } = "";
+    public string TournamentId { get; set; } = "";
+
+    public int WinPoints { get; set; } = 3;
+    public int DrawPoints { get; set; } = 1;
+    public int LosePoints { get; set; } = 0;
+
+    public int MaxScore { get; set; } = 99;
+    public int MaxGoalDiff { get; set; } = 20;
+
+    public int TimeoutSec { get; set; } = 10;
+    public int MaxRetries { get; set; } = 2;
+
+    public bool OfflineQueueEnabled { get; set; } = true;
+    public string QueueFilePath { get; set; } = "queue.json";
+
+    public static IoTSettings Load(string path)
+    {
+        if (!File.Exists(path))
+            throw new FileNotFoundException($"Config not found: {path}");
+
+        var json = File.ReadAllText(path);
+        var settings = JsonSerializer.Deserialize<IoTSettings>(json, new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        });
+
+        if (settings is null)
+            throw new InvalidOperationException("Failed to parse settings.");
+
+        if (string.IsNullOrWhiteSpace(settings.ApiBaseUrl))
+            throw new InvalidOperationException("ApiBaseUrl is required.");
+
+        return settings;
+    }
+}
+
+Models.cs
+public sealed class LoginRequest
+{
+    public string Email { get; set; } = "";
+    public string Password { get; set; } = "";
+}
+
+public sealed class AuthResponse
+{
+    public string UserId { get; set; } = "";
+    public string Name { get; set; } = "";
+    public string Email { get; set; } = "";
+    public string Role { get; set; } = "";
+    public string Token { get; set; } = "";
+}
+
+public sealed class TournamentListItem
+{
+    public string Id { get; set; } = "";
+    public string Name { get; set; } = "";
+    public string Status { get; set; } = "";
+}
+
+public sealed class MatchListItem
+{
+    public string Id { get; set; } = "";
+    public int Round { get; set; }
+    public string HomeTeamId { get; set; } = "";
+    public string AwayTeamId { get; set; } = "";
+    public string Status { get; set; } = "";
+    public string Location { get; set; } = "";
+    public string ScheduledAt { get; set; } = "";
+}
+
+public sealed class CreateMatchResultRequest
+{
+    public int HomeScore { get; set; }
+    public int AwayScore { get; set; }
+}
+
+public sealed class StandingsRow
+{
+    public string TeamId { get; set; } = "";
+    public string TeamName { get; set; } = "";
+    public int Played { get; set; }
+    public int Wins { get; set; }
+    public int Draws { get; set; }
+    public int Losses { get; set; }
+    public int GoalsFor { get; set; }
+    public int GoalsAgainst { get; set; }
+    public int GoalDiff { get; set; }
+    public int Points { get; set; }
+}
+
+
+OfflineQueue.cs
+using System.Text.Json;
+
+public sealed class OfflineQueue
+{
+    private readonly string _path;
+
+    public OfflineQueue(string path)
+    {
+        _path = path;
+    }
+
+    public void Enqueue(QueuedResult item)
+    {
+        var list = LoadAll();
+        list.Add(item);
+        SaveAll(list);
+    }
+
+    public List<QueuedResult> LoadAll()
+    {
+        if (!File.Exists(_path)) return new List<QueuedResult>();
+
+        var json = File.ReadAllText(_path);
+        var list = JsonSerializer.Deserialize<List<QueuedResult>>(json, new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        });
+
+        return list ?? new List<QueuedResult>();
+    }
+
+    public void Clear()
+    {
+        if (File.Exists(_path)) File.Delete(_path);
+    }
+
+    private void SaveAll(List<QueuedResult> list)
+    {
+        var json = JsonSerializer.Serialize(list, new JsonSerializerOptions { WriteIndented = true });
+        File.WriteAllText(_path, json);
+    }
+}
+
+public sealed class QueuedResult
+{
+    public string TournamentId { get; set; } = "";
+    public string MatchId { get; set; } = "";
+    public int HomeScore { get; set; }
+    public int AwayScore { get; set; }
+    public string CreatedAtUtc { get; set; } = DateTime.UtcNow.ToString("O");
+}
+
+Program.cs
+using System.Globalization;
+
+static string ReadNonEmpty(string prompt)
+{
+    while (true)
+    {
+        Console.Write(prompt);
+        var s = Console.ReadLine()?.Trim();
+        if (!string.IsNullOrWhiteSpace(s)) return s;
+    }
+}
+
+static int ReadInt(string prompt)
+{
+    while (true)
+    {
+        Console.Write(prompt);
+        var s = Console.ReadLine()?.Trim();
+        if (int.TryParse(s, NumberStyles.Integer, CultureInfo.InvariantCulture, out var v))
+            return v;
+
+        Console.WriteLine("Invalid number. Try again.");
+    }
+}
+
+var settings = IoTSettings.Load("iotsettings.json");
+var api = new ApiClient(settings.ApiBaseUrl, settings.TimeoutSec);
+var queue = new OfflineQueue(settings.QueueFilePath);
+
+Console.WriteLine("=== Smart Scoreboard (IoT Client) ===");
+Console.WriteLine($"API: {settings.ApiBaseUrl}");
+
+AuthResponse auth;
+try
+{
+    auth = await api.LoginAsync(settings.Email, settings.Password);
+    api.SetToken(auth.Token);
+    Console.WriteLine($"Logged in: {auth.Email} ({auth.Role}), token={auth.Token[..8]}...");
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Login failed: {ex.Message}");
+    return;
+}
+
+if (settings.OfflineQueueEnabled)
+{
+    var pending = queue.LoadAll();
+    if (pending.Count > 0)
+    {
+        Console.WriteLine($"[QUEUE] Pending results: {pending.Count}. Try to send now? (y/n)");
+        var ans = Console.ReadLine()?.Trim().ToLowerInvariant();
+        if (ans == "y" || ans == "yes")
+        {
+            var sent = 0;
+            foreach (var item in pending.ToList())
+            {
+                try
+                {
+                    BusinessRules.ValidateScore(item.HomeScore, item.AwayScore, settings);
+                    await api.EnterResultAsync(item.MatchId, item.HomeScore, item.AwayScore);
+                    sent++;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine($"[QUEUE] Failed to send match={item.MatchId[..8]}... : {e.Message}");
+                }
+            }
+
+            if (sent == pending.Count)
+            {
+                queue.Clear();
+                Console.WriteLine("[QUEUE] All sent. Queue cleared.");
+            }
+            else
+            {
+                Console.WriteLine("[QUEUE] Some items were not sent. Queue kept.");
+            }
+        }
+    }
+}
+
+string tournamentId = settings.TournamentId;
+if (string.IsNullOrWhiteSpace(tournamentId))
+{
+    var tournaments = await api.GetTournamentsAsync();
+    if (tournaments.Count == 0)
+    {
+        Console.WriteLine("No tournaments found.");
+        return;
+    }
+
+    Console.WriteLine("Tournaments:");
+    for (int i = 0; i < tournaments.Count; i++)
+        Console.WriteLine($"{i + 1}. {tournaments[i].Name}  [{tournaments[i].Status}]  id={tournaments[i].Id}");
+
+    var idx = ReadInt("Choose tournament (number): ") - 1;
+    if (idx < 0 || idx >= tournaments.Count)
+    {
+        Console.WriteLine("Invalid choice.");
+        return;
+    }
+    tournamentId = tournaments[idx].Id;
+}
+
+Console.WriteLine($"Selected TournamentId={tournamentId}");
+
+while (true)
+{
+    Console.WriteLine();
+    Console.WriteLine("1) List matches");
+    Console.WriteLine("2) Enter match result");
+    Console.WriteLine("3) Show standings");
+    Console.WriteLine("0) Exit");
+    var cmd = ReadInt("Command: ");
+
+    if (cmd == 0) break;
+
+    if (cmd == 1)
+    {
+        var matches = await api.GetMatchesAsync(tournamentId);
+        Console.WriteLine($"Matches: {matches.Count}");
+        foreach (var m in matches)
+        {
+            Console.WriteLine($"- id={m.Id} round={m.Round} status={m.Status} home={m.HomeTeamId[..8]} away={m.AwayTeamId[..8]}");
+        }
+    }
+    else if (cmd == 2)
+    {
+        var matchId = ReadNonEmpty("MatchId (GUID): ");
+        var home = ReadInt("HomeScore: ");
+        var away = ReadInt("AwayScore: ");
+
+        try
+        {
+            BusinessRules.ValidateScore(home, away, settings);
+            var (hp, ap, gd) = BusinessRules.ComputePoints(home, away, settings);
+
+            Console.WriteLine($"[LOCAL] goalDiff={gd}, points: home={hp}, away={ap}");
+            Console.Write("Send to server? (y/n): ");
+            var ans = Console.ReadLine()?.Trim().ToLowerInvariant();
+            if (ans != "y" && ans != "yes") continue;
+
+            await api.EnterResultAsync(matchId, home, away);
+            Console.WriteLine("[OK] Result sent. Match should become 'finished'.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"[ERROR] {ex.Message}");
+
+            if (settings.OfflineQueueEnabled)
+            {
+                Console.Write("Save to offline queue? (y/n): ");
+                var ans = Console.ReadLine()?.Trim().ToLowerInvariant();
+                if (ans == "y" || ans == "yes")
+                {
+                    queue.Enqueue(new QueuedResult
+                    {
+                        TournamentId = tournamentId,
+                        MatchId = matchId,
+                        HomeScore = home,
+                        AwayScore = away
+                    });
+                    Console.WriteLine("[QUEUE] Saved.");
+                }
+            }
+        }
+    }
+    else if (cmd == 3)
+    {
+        var rows = await api.GetStandingsAsync(tournamentId);
+        Console.WriteLine("Standings:");
+        foreach (var r in rows)
+        {
+            Console.WriteLine($"{r.Points,3} pts | {r.TeamName} | P:{r.Played} W:{r.Wins} D:{r.Draws} L:{r.Losses} GD:{r.GoalDiff}");
+        }
+    }
+}
+
+ 
+ДОДАТОК Б
+Посилання на відео: https://youtu.be/He-T9WJSEls
